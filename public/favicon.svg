@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient: Deep Cosmic Obsidian -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="50%" stop-color="#060a14"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </linearGradient>
+
+    <!-- Electric Cyan Gradient -->
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Quantum Amber Gradient for Play Accent -->
+    <linearGradient id="amber-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="cyan-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="512" height="512" rx="120" fill="url(#bg-grad)"/>
+  <rect x="3" y="3" width="506" height="506" rx="117" fill="none" stroke="url(#cyan-glow)" stroke-width="5" stroke-opacity="0.45"/>
+
+  <!-- Subtle Radial Glow in Center -->
+  <circle cx="256" cy="256" r="160" fill="#06b6d4" opacity="0.12" filter="blur(30px)"/>
+
+  <!-- Zuxo Modern Z + Play Monogram -->
+  <g id="zuxo-emblem" filter="url(#cyan-bloom)">
+    <!-- Top Horizontal Bar of Z (Sleek aerodynamic trapezoid) -->
+    <path d="M 120 130 L 372 130 C 392 130 404 148 396 166 L 356 220 L 190 220 L 235 156 C 240 148 234 138 224 138 L 132 138 C 122 138 114 132 120 130 Z" 
+          fill="url(#cyan-glow)" />
+
+    <!-- Bottom Horizontal Bar of Z -->
+    <path d="M 392 382 L 140 382 C 120 382 108 364 116 346 L 156 292 L 322 292 L 277 356 C 272 364 278 374 288 374 L 380 374 C 390 374 398 380 392 382 Z" 
+          fill="url(#cyan-glow)" />
+
+    <!-- Sharp Diagonal Blade connecting Z -->
+    <path d="M 376 172 L 210 340 L 136 340 L 302 172 Z" 
+          fill="url(#cyan-glow)" opacity="0.95" />
+
+    <!-- Central Glowing Play Arrow / Quantum Core -->
+    <path d="M 235 205 L 320 256 L 235 307 Z" 
+          fill="url(#amber-accent)" />
+  </g>
+
+  <!-- High-Tech Ambient Dots/Accents -->
+  <circle cx="132" cy="138" r="6" fill="#38bdf8" opacity="0.9"/>
+  <circle cx="380" cy="374" r="6" fill="#f59e0b" opacity="0.9"/>
+</svg>

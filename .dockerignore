@@ -1,0 +1,14 @@
+node_modules
+.output
+.nitro
+dist
+.git
+.gitignore
+.vscode
+.idea
+*.log
+.DS_Store
+.env
+.env.local
+.lovable
+README.md

@@ -1,0 +1,15 @@
+{
+  "name": "Zuxo Player",
+  "short_name": "Zuxo Player",
+  "description": "Zuxo Player - Reprodutor IPTV Premium sem travar com +35.000 canais em 4K",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060a14",
+  "theme_color": "#06b6d4",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
